@@ -2,8 +2,13 @@ import React from 'react';
 import profilePic from './assets/Profile_pic.png';
 import linkedinIcon from './assets/linkedin.png';
 import githubIcon from './assets/github.png';
+import resumePDF from './assets/KANISHKARAN_M_RESUME.pdf';
 
 const Profile = () => {
+    const PdfOpener = () => {
+  const openPdf = () => {
+    window.open(resumePDF);
+  };
     return (
         <section id="profile">
             <div className="sec-pic-container">
@@ -16,7 +21,7 @@ const Profile = () => {
                 <div className="btn-container">
                     <button
                         className="btn btn-color-2"
-                        onClick={() => window.open( process.env.PUBLIC_URL + '/assets/KANISHKARAN_M_RESUME.pdf')}
+                        onClick={openPdf}
                     >
                         Download CV
                     </button>
