@@ -16,7 +16,7 @@ const Profile = () => {
                 <div className="btn-container">
                     <button
                         className="btn btn-color-2"
-                        onClick={() => window.open( process.env.PUBLIC_URL + './assets/KANISHKARAN_M_RESUME.pdf')}
+                        onClick={() => window.open( '/assets/KANISHKARAN_M_RESUME.pdf')}
                     >
                         Download CV
                     </button>
